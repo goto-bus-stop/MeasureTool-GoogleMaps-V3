@@ -1,22 +1,16 @@
 {
-  "name": "measuretool-googlemaps-v3",
+  "name": "@goto-bus-stop/google-maps-measure",
   "version": "1.0.2",
   "description": "A handy measurement widget for Google Maps API v3. The functionalities are implemented as close as to what current Google Maps offers.",
   "module": "dist/gmaps-measuretool.esm.js",
   "browser": "dist/gmaps-measuretool.umd.js",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "prepare": "npm run build",
     "format": "prettier --write src"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhenyanghua/MeasureTool-GoogleMaps-V3.git"
-  },
+  "repository": "goto-bus-stop/google-maps-measure",
   "keywords": [
     "Google Maps API",
     "measuremnt",
@@ -26,10 +20,8 @@
   ],
   "author": "Zhenyang Hua",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/zhenyanghua/MeasureTool-GoogleMaps-V3/issues"
-  },
-  "homepage": "https://github.com/zhenyanghua/MeasureTool-GoogleMaps-V3#readme",
+  "bugs": "https://github.com/goto-bus-stop/google-maps-measure/issues",
+  "homepage": "https://github.com/goto-bus-stop/google-maps-measure#readme",
   "dependencies": {
     "d3-drag": "^2.0.0",
     "d3-selection": "^2.0.0"

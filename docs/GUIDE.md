@@ -5,18 +5,18 @@
 ## Installation
 Use CDN
 ```html
-<script src="https://unpkg.com/measuretool-googlemaps-v3"></script>
+<script src="https://unpkg.com/@goto-bus-stop/google-maps-measure"></script>
 ```
 Use ESM
 ```shell
-npm install --save measuretool-googlemaps-v3
+npm install --save @goto-bus-stop/google-maps-measure
 ```
 ```js
-import MeasureTool from 'measuretool-googlemaps-v3';
+import MeasureTool from '@goto-bus-stop/google-maps-measure';
 ```
 or 
 ```js
-import MeasureTool from 'https://unpkg.com/measuretool-googlemaps-v3';
+import MeasureTool from 'https://unpkg.com/@goto-bus-stop/google-maps-measure';
 ```
 
 ## Dependency

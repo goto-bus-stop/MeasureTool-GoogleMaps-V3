@@ -1,5 +1,7 @@
 # Measurement Tool for Google Maps JS API V3
 
+> This is a fork of the [MeasureTool-GoogleMaps-V3](https://github.com/zhenyanghua/MeasureTool-GoogleMaps-V3) by [@zhenyanghua](https://github.com/zhenyanghua).
+
 A mobile friendly measure tool for Google Maps JS API v3.
 
 ## Features
