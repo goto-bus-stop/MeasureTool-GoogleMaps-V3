@@ -2,6 +2,7 @@ import { UnitTypeId } from './UnitTypeId';
 export default class Helper {
   constructor(options) {
     this._options = {
+      language: 'en',
       unit: UnitTypeId.METRIC,
       formatLength: null,
       formatArea: null,
@@ -11,6 +12,7 @@ export default class Helper {
   }
 
   init() {
+    this._formatter = new Intl.NumberFormat(this._options.language);
     this.initUnits();
   }
 
@@ -186,7 +188,7 @@ export default class Helper {
   }
 
   _numberToLocale(number) {
-    return new Intl.NumberFormat().format(number);
+    return this._formatter.format(number);
   }
 
   /**
