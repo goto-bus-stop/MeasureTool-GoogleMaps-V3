@@ -3,6 +3,8 @@ export default class Helper {
   constructor(options) {
     this._options = {
       unit: UnitTypeId.METRIC,
+      formatLength: null,
+      formatArea: null,
     };
     Object.assign(this._options, options);
     this.init();
@@ -52,27 +54,27 @@ export default class Helper {
     switch (this._options.unit.toLowerCase()) {
       case UnitTypeId.METRIC:
         this._lengthMultiplier = 1;
-        this.formatLength = this._formatLengthMetric;
+        this.formatLength = this._options.formatLength ?? this._formatLengthMetric;
         this._areaMultiplier = 1;
-        this.formatArea = this._formatAreaMetric;
+        this.formatArea = this._options.formatArea ?? this._formatAreaMetric;
         break;
       case UnitTypeId.IMPERIAL:
         this._lengthMultiplier = 3.28084;
-        this.formatLength = this._formatLengthImperial;
+        this.formatLength = this._options.formatLength ?? this._formatLengthImperial;
         this._areaMultiplier = 10.7639;
-        this.formatArea = this._formatAreaImperial;
+        this.formatArea = this._options.formatArea ?? this._formatAreaImperial;
         break;
       case UnitTypeId.NAUTICAL:
         this._lengthMultiplier = 1;
-        this.formatLength = this._formatLengthNautical;
+        this.formatLength = this._options.formatLength ?? this._formatLengthNautical;
         this._areaMultiplier = 1;
-        this.formatArea = this._formatAreaMetric;
+        this.formatArea = this._options.formatArea ?? this._formatAreaMetric;
         break;
       default:
         this._lengthMultiplier = 1;
-        this.formatLength = this._formatLengthMetric;
+        this.formatLength = this._options.formatLength ?? this._formatLengthMetric;
         this._areaMultiplier = 1;
-        this.formatArea = this._formatAreaMetric;
+        this.formatArea = this._options.formatArea ?? this._formatAreaMetric;
         break;
     }
   }
