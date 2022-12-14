@@ -105,7 +105,10 @@ export default class MeasureTool {
     }
 
     this._helper = new Helper({
+      language: this._options.language,
       unit: this._options.unit,
+      formatLength: this._options.formatLength,
+      formatArea: this._options.formatArea,
     });
     this._initOverlay();
   }
